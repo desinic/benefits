@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #232F3E;
+}
+
+a{
+    text-decoration: none;
+    color: #135eb9;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.title{
+    background-color: #232F3E;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.title h1{
+    font-size: 42px;
+    color: rgb(231, 225, 225);
+}
+.sub-title{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 25px 0;
+}
+.sub-title h2{
+    width: 800px;
+    text-align: center;
+    color: #232F3E;
+    font-size: 28px;
+    font-weight: 700;
+}
+.desc{
+    display: flex;
+    justify-content: center;
+}
+.desc p{
+    width: 900px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 27px;
+}
+hr{
+    margin-top: 50px;
+    max-width: 1150px;
+    margin: 50px auto;
+}
+
+/*  */
+.health{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+.content .health-left img{
+    max-width: 500px;
+}
+
+.content .health-right{
+    max-width: 450px;
+}
+.content .health-right .health-wrap h2{
+    font-size: 24px;
+    font-weight: 500;
+}
+.content .health-right .health-wrap{
+    margin-top: 70px;
+}
+.content .health-right .health-wrap ul.health-desc {
+    margin-left: 30px;
+}
+.content .health-right .health-wrap ul.health-desc li{
+    font-size: 14px;
+    line-height: 30px;
+}
+.health-xs{
+    margin-top: 100px;
+}
+.health-xp{
+    margin-top: 100px;
+}
+.start{
+    margin-bottom: 50px;
+}
+.start-title h1{
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+}
+.start-sub-title{
+    display: flex;
+    justify-content: center;
+}
+.start-sub-title a{
+    margin-left: 5px;
+}
+.start-btn{
+    display: flex;
+    justify-content: center;
+}
+.start-btn a{
+    padding: 10px 50px;
+    background: #1659A9;
+    color: #ddd;
+    border-radius: 30px;
+    font-size: 18px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+footer{
+    background: #232F3E;
+    padding: 20px;
+    margin-top: 70px;
+}
+.footer-wrap{
+    display: flex;
+    max-width: 500px;
+    justify-content: space-between;
+}
+.footer-title{
+    color: #ddd;
+    font-size: 18px;
+    font-weight: 800;
+}
+.footer-links a{
+    text-decoration: none;
+}
+.footer-links a ion-icon{
+    font-size: 28px;
+    color: #ddd;
+    margin-left: 10px;
+}
+.mt-5 a{
+    margin: 20px 0 20px;
+}
+.start-btn a:hover{
+    background: #135eb9;
+}
+
+@media screen and (max-width: 950px){
+    .health .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content .health-right .health-wrap{
+        margin-top: 20px;
+    }
+    .health-xp, .health-xs{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 600px){
+    .start-sub-title{
+        display: block;
+    }
+}
+@media screen and (max-width: 500px){
+    .content .health-left img{
+        max-width: 400px;
+    }
+    .sub-title h2{
+        font-size: 22px;
+    }
+    .desc p{
+        font-size: 14px;
+    }
+    .start-title h1{
+        font-size: 30px;
+    }
+    .start-sub-title, .start-sub-title a{
+        font-size: 14px;
+    }
+    .start-sub-title {
+        margin-left: 15px;
+    }
+    .content .health-right{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 400px){
+    .content .health-left img{
+        max-width: 300px;
+    }
+}
+@media screen and (max-width: 375px){
+    .footer-links a ion-icon{
+        font-size: 24px;
+    }
+    .footer-title{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 350px){
+    .start-title h1{
+        font-size: 24px;
+    }
+    .start-sub-title, .start-sub-title a{
+        font-size: 14px;
+    }
+}
